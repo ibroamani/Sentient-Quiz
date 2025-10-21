@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SentientAI Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Screen -->
+    <div class="container fade show" id="startContainer">
+      <div class="start-box">
+        <h1>Integrate Your Knowledge with SentientAI Quiz</h1>
+        <!-- <img src="img/Sentient grid background.png" alt="SentientAI Logo" /> -->
+        <button id="startBtn">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="container fade" id="quizContainer" style="display: none">
+      <div class="quiz-box">
+        <h2 id="questionText"></h2>
+        <div id="optionsContainer" class="options"></div>
+      </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="container fade" id="resultContainer" style="display: none">
+      <div class="result-box">
+        <h2>Quiz Completed!</h2>
+        <p id="scoreText"></p>
+        <a id="shareBtn" target="_blank">Share on X</a>
+      </div>
+    </div>
+
+    <!-- All Questions/Answers -->
+    <script>
+      const questions = [
+        {
+          q: "What is Sentient’s mission regarding AGI?",
+          options: [
+            "Keep AGI controlled by a single entity",
+            "Ensure AGI is open-source",
+            "Sell AGI exclusively to corporations",
+          ],
+          answer: 1,
+        },
+        {
+          q: "What is GRID?",
+          options: [
+            "A network of specialized intelligences",
+            "A single monolithic AI model",
+            "A blockchain payment system",
+          ],
+          answer: 0,
+        },
+        {
+          q: "How do users access the GRID?",
+          options: [
+            "Through Sentient Chat",
+            "Via private blockchain",
+            "Using GRID hardware only",
+          ],
+          answer: 0,
+        },
+        {
+          q: "How many partners currently comprise GRID?",
+          options: ["Over 110", "50", "500"],
+          answer: 0,
+        },
+        {
+          q: "What fuels GRIDs network growth?",
+          options: [
+            "Sentient token economy",
+            "Government funding",
+            "Advertising revenue",
+          ],
+          answer: 0,
+        },
+        {
+          q: "How does GRID handle simpler queries?",
+          options: [
+            "Randomly assigns tasks",
+            "Uses expert-designed workflows",
+            "Sends query to a single model",
+          ],
+          answer: 1,
+        },
+        {
+          q: "What is recursive atomization in GRID?",
+          options: [
+            "Breaking queries into atomic tasks",
+            "Combining multiple outputs into one",
+            "Assigning queries to a single agent",
+          ],
+          answer: 0,
+        },
+        {
+          q: "What is a token in GRIDs token-level routing?",
+          options: [
+            "A type of cryptocurrency",
+            "The smallest unit of text processed by AI",
+            "A workflow step",
+          ],
+          answer: 1,
+        },
+        {
+          q: "How are atomic tasks routed?",
+          options: [
+            "To the most capable intelligence",
+            "To random community members",
+            "To GRID administrators",
+          ],
+          answer: 0,
+        },
+        {
+          q: "What advantage does token-level routing provide?",
+          options: [
+            "Higher quality output at lower cost",
+            "Slower processing but more secure",
+            "Limits queries to one intelligence",
+          ],
+          answer: 0,
+        },
+        {
+          q: "What is a memory injection attack?",
+          options: [
+            "Modifying blockchain protocol",
+            "Poisoning agent’s memory to persist malicious behavior",
+            "Direct prompt input by attacker",
+          ],
+          answer: 1,
+        },
+        {
+          q: "Which attack vector persists across sessions and platforms?",
+          options: [
+            "Direct Prompt Injection",
+            "Memory Injection",
+            "Content Filtering",
+          ],
+          answer: 1,
+        },
+        {
+          q: "What is the primary vulnerability in AI financial agents?",
+          options: [
+            "Context manipulation",
+            "Slow transaction speeds",
+            "Insufficient compute resources",
+          ],
+          answer: 0,
+        },
+        {
+          q: "Current defenses fail mainly because they cannot prevent?",
+          options: [
+            "Standard prompt generation",
+            "Context manipulation attacks",
+            "Smart contract deployment",
+          ],
+          answer: 1,
+        },
+        {
+          q: "Fiduciarily responsible language models aim to ensure?",
+          options: [
+            "Faster blockchain processing",
+            "Secure financial operations",
+            "Open-source AI development",
+          ],
+          answer: 1,
+        },
+        {
+          q: "Why are autonomous web agents vulnerable?",
+          options: [
+            "They are inherently stateless",
+            "They rely on quantum computing",
+            "They execute only offline tasks",
+          ],
+          answer: 0,
+        },
+        {
+          q: "What enables cross-platform memory injection?",
+          options: [
+            "Client-side or third-party memory storage",
+            "Direct blockchain control",
+            "Centralized server logs",
+          ],
+          answer: 0,
+        },
+        {
+          q: "What benchmark evaluates financial agent vulnerabilities?",
+          options: ["WebVoyager", "CrAIBench", "Agent-E"],
+          answer: 1,
+        },
+        {
+          q: "Which defense still failed against single plan injection?",
+          options: [
+            "Semantic integrity checks",
+            "Prompt-only defenses",
+            "Verifiable context modules",
+          ],
+          answer: 1,
+        },
+        {
+          q: "Key recommendation to secure web agent memory?",
+          options: [
+            "Strict memory isolation",
+            "Faster CPU processing",
+            "Open-source storage",
+          ],
+          answer: 0,
+        },
+      ];
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
