@@ -61,7 +61,7 @@ function endQuiz() {
   fadeOut(quizContainer);
   setTimeout(() => fadeIn(resultContainer), 800);
   scoreText.textContent = `You scored ${score}% on SentientAI Quiz!`;
-  shareBtn.href = `https://twitter.com/intent/tweet?text=I scored ${score}% on the SentientAI Quiz by @musty0411! 🧠🚀`;
+  shareBtn.href = `https://twitter.com/intent/tweet?text=I just scored ${score}% on the SentientAI Quiz by @musty0411! 🧠🚀`;
 }
 
 window.onload = () => startContainer.classList.add("show");
